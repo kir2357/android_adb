@@ -5,7 +5,9 @@ notebook/src/logs/app.log
 venv/
 src/logs/*
 past_code/
-img/*
+
+img/temp/*
+img/search_img/*
 
 
 !.gitkeep
