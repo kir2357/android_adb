@@ -1,7 +1,7 @@
 import subprocess
 import numpy
 import cv2
-import time
+import datetime
 
 ADB_PATH = '../platform-tools/adb'
 
@@ -49,7 +49,7 @@ def capture_screen_1():
 
 # 検証用コード
 if __name__ == "__main__":
-    start = time.time()
     img = capture_screen_1()
-    print(time.time() - start)
-    cv2.imwrite('img/temp/6.png', img)
+    now = datetime.datetime.now()
+    filename = './img/temp//screen_' + now.strftime('%Y%m%d_%H%M%S') + '.png'
+    cv2.imwrite(filename, img)
