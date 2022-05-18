@@ -1,0 +1,11 @@
+__pycache__/
+.env
+notebook_test/
+notebook/src/logs/app.log
+venv/
+src/logs/*
+past_code/
+img/*
+
+
+!.gitkeep
